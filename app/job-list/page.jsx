@@ -72,6 +72,8 @@ export default function JobList() {
           alt="QuantumEdge Logo"
           className="h-18 w-auto absolute right-3/12 bottom-6 hidden md:block"
         />
+        {/* Blurred backdrop circles */}
+        <div class="hidden md:block absolute top-[-150px] left-20 -translate-x-1/2 -translate-y-1/2 w-[350] h-[350px] bg-custom-green p-8 rounded-full blur-3xl shadow-lg opacity-80 z-10"></div>
       </div>
       <div className="px-2 sm:8 xl:px-32 py-10 space-y-4">
         <h1 className="text-2xl font-bold text-black">
@@ -79,17 +81,17 @@ export default function JobList() {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {dummyJobs.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
-            {jobs.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
-            {jobs.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
-            {jobs.map((job) => (
-              <JobCard key={job.id} job={job} />
-            ))}
+            <JobCard key={job.id} job={job} />
+          ))}
+          {jobs.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
+          {jobs.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
+          {jobs.map((job) => (
+            <JobCard key={job.id} job={job} />
+          ))}
         </div>
       </div>
     </div>
