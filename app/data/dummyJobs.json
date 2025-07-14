@@ -1,0 +1,154 @@
+{
+  "status": true,
+  "count": 6,
+  "next": null,
+  "previous": null,
+  "data": [
+    {
+      "id": 1,
+      "title": "Full Stack Web Developer",
+      "budget_type": "Fixed Rate",
+      "rate_from": "800",
+      "rate_to": "1200",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Senior Level",
+      "hiring_capacity": "3",
+      "created_at": "2025-07-10T10:30:00Z",
+      "skills": [
+        { "id": 1, "label": "React" },
+        { "id": 2, "label": "Node.js" },
+        { "id": 3, "label": "MongoDB" },
+        { "id": 4, "label": "Express.js" },
+        { "id": 4, "label": "Express.js" },
+        { "id": 4, "label": "Express.js" },
+        { "id": 4, "label": "Express.js" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "fullstack" },
+        { "id": 2, "title": "web app" }
+      ],
+      "postedBy": "Eamman Olio"
+    },
+    {
+      "id": 2,
+      "title": "UI/UX Designer for Mobile App",
+      "budget_type": "Hourly Rate",
+      "rate_from": "25",
+      "rate_to": "40",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Mid Level",
+      "hiring_capacity": "1",
+      "created_at": "2025-07-09T14:10:00Z",
+      "skills": [
+        { "id": 1, "label": "Figma" },
+        { "id": 2, "label": "Prototyping" },
+        { "id": 3, "label": "User Research" },
+        { "id": 3, "label": "User Research" },
+        { "id": 3, "label": "User Research" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "ui design" },
+        { "id": 2, "title": "ux testing" },
+        { "id": 2, "title": "ux testing" },
+        { "id": 2, "title": "ux testing" },
+        { "id": 2, "title": "ux testing" }
+      ],
+      "postedBy": "Eamman Olio"
+    },
+    {
+      "id": 3,
+      "title": "SEO Specialist Needed",
+      "budget_type": "Fixed Rate",
+      "rate_from": "500",
+      "rate_to": "700",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Entry Level",
+      "hiring_capacity": "2",
+      "created_at": "2025-07-08T12:00:00Z",
+      "skills": [
+        { "id": 1, "label": "SEO" },
+        { "id": 2, "label": "Google Analytics" },
+        { "id": 3, "label": "Google Analytics" },
+        { "id": 2, "label": "Google Analytics" },
+        { "id": 2, "label": "Google Analytics" },
+        { "id": 3, "label": "Ahrefs" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "marketing" },
+        { "id": 2, "title": "seo" }
+      ],
+      "postedBy": "Eamman Olio"
+    },
+    {
+      "id": 4,
+      "title": "DevOps Engineer for Deployment Automation",
+      "budget_type": "Fixed Rate",
+      "rate_from": "1000",
+      "rate_to": "1400",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Senior Level",
+      "hiring_capacity": "1",
+      "created_at": "2025-07-07T16:00:00Z",
+      "skills": [
+        { "id": 1, "label": "Docker" },
+        { "id": 2, "label": "AWS" },
+        { "id": 3, "label": "Jenkins" },
+        { "id": 3, "label": "Jenkins" },
+        { "id": 3, "label": "Jenkins" },
+        { "id": 3, "label": "Jenkins" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "deployment" },
+        { "id": 2, "title": "infrastructure" }
+      ],
+      "postedBy": "Eamman Olio"
+    },
+    {
+      "id": 5,
+      "title": "E-commerce Product Photographer",
+      "budget_type": "Fixed Rate",
+      "rate_from": "300",
+      "rate_to": "500",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Entry Level",
+      "hiring_capacity": "2",
+      "created_at": "2025-07-06T11:30:00Z",
+      "skills": [
+        { "id": 1, "label": "Photography" },
+        { "id": 2, "label": "Lightroom" },
+        { "id": 3, "label": "Product" },
+        { "id": 3, "label": "Product" },
+        { "id": 3, "label": "Product" },
+        { "id": 3, "label": "Product" },
+        { "id": 3, "label": "Product" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "ecommerce" },
+        { "id": 2, "title": "shopify" }
+      ],
+      "postedBy": "Eamman Ali"
+    },
+    {
+      "id": 6,
+      "title": "Website Design and Front-End Development",
+      "budget_type": "Hourly Rate",
+      "rate_from": "15",
+      "rate_to": "25",
+      "job_description": "In this role, you will be responsible for conducting comprehensive SEO audits and implementing strategies to optimize websites...",
+      "experience_level": "Mid Level",
+      "hiring_capacity": "1",
+      "created_at": "2025-07-05T09:00:00Z",
+      "skills": [
+        { "id": 1, "label": "Content Writing" },
+        { "id": 2, "label": "Technical Writing" },
+        { "id": 3, "label": "SEO" }
+      ],
+      "keywords": [
+        { "id": 1, "title": "blogging" },
+        { "id": 2, "title": "tech" }
+      ],
+      "postedBy": "Eamman Olio"
+      
+    }
+  ]
+}
