@@ -1,6 +1,8 @@
 "use client"
 
 import { MdOutlineArrowDropDown, MdMenu, MdClose } from "react-icons/md";
+import { IoSearch } from "react-icons/io5";
+import { IoSearchSharp } from "react-icons/io5";
 import { BiCategory } from "react-icons/bi";
 import { useState } from "react";
 
@@ -12,7 +14,7 @@ const Header = () => {
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);
 
   return (
-    <header className="w-full bg-[#0f1a0f] text-white p-4 flex lg:gap-8 flex-col lg:flex-row items-center shadow-md sm:px-8 xl:px-40">
+    <header className="w-full bg-[#0f1a0f] text-white p-4 flex lg:gap-8 flex-col lg:flex-row items-center shadow-md sm:px-8 xl:px-40 z-50">
       {/* Top Bar (Logo + Mobile Controls) */}
       <div className="w-full flex lg:flex-1 items-center justify-between lg:justify-start lg:w-auto">
         {/* Logo */}
@@ -33,7 +35,7 @@ const Header = () => {
             className="text-white p-2"
             aria-label="Toggle search"
           >
-            {isSearchOpen ? <MdClose /> : <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>}
+            {isSearchOpen ? <MdClose /> : <IoSearchSharp />}
           </button>
           
           {/* Mobile Menu Toggle */}
@@ -69,7 +71,7 @@ const Header = () => {
         <buttom  className="hover:underline w-full text-center lg:w-auto cursor-pointer">
           LOGIN
         </buttom>
-        <button className="bg-custom-green hover:bg-green-600 text-white px-4 py-1 rounded-full cursor-pointer w-full lg:w-auto">
+        <button className="bg-custom-green hover:bg-green-600 text-white px-4 py-1.5 rounded-full cursor-pointer w-full lg:w-auto">
           Registration
         </button>
       </div>
