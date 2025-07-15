@@ -5,6 +5,7 @@ import { IoSearch } from "react-icons/io5";
 import { IoSearchSharp } from "react-icons/io5";
 import { BiCategory } from "react-icons/bi";
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,9 @@ const Header = () => {
       <div className="w-full flex lg:flex-1 items-center justify-between lg:justify-start lg:w-auto">
         {/* Logo */}
         <div className="flex items-center space-x-4">
+          <Link href={"/"}>
           <img src="/logo.png" alt="QuantumEdge Logo" className="h-10 w-auto" />
+          </Link>
           {/* Categories Button - Hidden on mobile */}
           <button className="hidden lg:flex items-center gap-1 bg-[#a7f67c0f] border border-custom-green text-custom-green px-3 py-1 rounded-full text-sm font-semibold hover:text-white transition cursor-pointer">
             <BiCategory />
@@ -68,12 +71,12 @@ const Header = () => {
         <buttom  className="text-custom-green hover:underline w-full text-center lg:w-auto cursor-pointer">
           BECOME A SELLER
         </buttom>
-        <buttom  className="hover:underline w-full text-center lg:w-auto cursor-pointer">
+        <Link href={"/user/login"}  className="hover:underline w-full text-center lg:w-auto cursor-pointer">
           LOGIN
-        </buttom>
-        <button className="bg-custom-green hover:bg-green-600 text-white px-4 py-1.5 rounded-full cursor-pointer w-full lg:w-auto">
+        </Link>
+        <Link href={"/user/register"} className="bg-custom-green hover:bg-green-600 text-white px-4 py-1.5 rounded-full cursor-pointer w-full lg:w-auto">
           Registration
-        </button>
+        </Link>
       </div>
     </header>
   );
