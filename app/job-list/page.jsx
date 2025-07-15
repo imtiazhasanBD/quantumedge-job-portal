@@ -6,6 +6,7 @@ import JobCard from "../components/JobCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import dummy from "../data/dummyJobs.json";
+import JobSkeletonLoader from "../components/JobSkeletonLoader";
 
 export default function JobList() {
   const [jobs, setJobs] = useState([]);
@@ -25,8 +26,6 @@ export default function JobList() {
   }, []);
 
   const dummyJobs = dummy.data;
-
-  if (loading) return <p className="text-center py-10">Loading jobs...</p>;
 
   return (
     <div className="bg-white">
@@ -79,20 +78,24 @@ export default function JobList() {
         <h1 className="text-2xl font-bold text-black">
           5 search result(s) found
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-          {dummyJobs.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-          {jobs.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-          {jobs.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-          {jobs.map((job) => (
-            <JobCard key={job.id} job={job} />
-          ))}
-        </div>
+        {loading ? (
+          <JobSkeletonLoader />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            {dummyJobs.map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
+            {jobs.map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
+            {jobs.map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
+            {jobs.map((job) => (
+              <JobCard key={job.id} job={job} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
