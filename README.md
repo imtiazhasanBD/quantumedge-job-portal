@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Developer Intern Task
 
-## Getting Started
+This is a 3-page frontend application built using **Next.js** and **Tailwind CSS**, based on a provided [Figma design](https://www.figma.com/design/LLrXn8vTjMHmuBjiyEiLs2/Job-Interview-Figma-Design?node-id=0-1). It includes Login, Registration, and Job Listings pages, with integration of public API endpoints.
 
-First, run the development server:
+## 🔗 Live Demo 
+> https://quantumedge-job-portal.vercel.app
+---
 
+## 📁 Pages
+
+### ✅ Login Page
+- Authenticates users via API:  
+  `http://api.mnimedu.com/api/auth/login/`
+- Displays validation and error messages.
+
+### ✅ Registration Page
+- Registers users using:  
+  `http://api.mnimedu.com/api/auth/registration/`
+- Includes password match validation.
+
+### ✅ Job Listings Page
+- Fetches job data from:  
+  `https://api.mnimedu.com/api/browse/pro-jobs/`
+- Displays dynamic job cards as per Figma.
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons
+- **HTTP Client:** Axios
+- **Design Match:** Fully responsive & matches Figma
+
+---
+
+## 📦 Features
+
+- Responsive and pixel-perfect layout
+- Real-time API integration
+- Error handling and user-friendly feedback
+- Clean, modular component structure
+- Minimal UI transitions and accessibility
+
+---
+
+## ⚠️ Issues & Solutions
+
+### ❌ Issue: CORS Error During Login
+**Solution:**  
+- Confirmed the endpoint via Postman  
+- Displayed fallback messages for error handling in UI  
+- Optional: Used proxy setup in development if needed
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/imtiazhasanBD/quantumedge-job-portal
+cd job-interview-frontend
